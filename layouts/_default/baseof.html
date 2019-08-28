@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{ partial "meta" . }}
+  </head>
+  <body>
+    <div class="container">
+      {{ partial "header" . }}
+      {{ block "main" . }}
+      {{end}}
+      {{ partial "footer" .}}
+    </div>
+  </body>
+</html>

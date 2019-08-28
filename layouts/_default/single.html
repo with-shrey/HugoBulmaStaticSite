@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="video-metadata">
+<div>
+  <h1 class="title">{{.Title}}</h1>
+</div>
+<div>
+  <p class="description">{{.Description}}</p>
+</div>
+</div>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/{{.Params.videoId}}" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+</div>
+{{end}}
